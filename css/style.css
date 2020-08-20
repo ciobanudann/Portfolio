@@ -1,0 +1,151 @@
+:root{
+  --mainText: black;
+  --secondaryText: #4b5156;
+
+  --borderColor: #c1c1c1;
+
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+  color: var(--mainText);
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500px;
+}
+
+p, li, span, label, input, textarea{
+  color: var(--secondaryText);
+  font-family: 'Roboto Mono', monospace;
+}
+
+a{
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul{
+  list-style: none;
+}
+h1{
+  font-size: 65px;
+}
+h2{
+  font-size: 36px;
+}
+h3{
+  font-size: 28px;
+}
+h4{
+  font-size: 24px;
+}
+h5{
+  font-size: 20px;
+}
+h6{
+  font-size: 16px;
+}
+.s1{
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor)
+}
+
+.s2{
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor)
+}
+
+
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px){
+  .main-container{
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.greeting-wrapper{
+  display:grid;
+  text-align: center;
+  align-content: center;
+
+  min-height: 10em;
+
+}
+
+.intro-wrapper{
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borderColor);
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 30em;
+  border-radius: 5px 5px 0 0;
+  grid-template-areas:
+  'nav-wrapper nav-wrapper'
+  'left-column right-column'
+}
+
+.nav-wrapper{
+  grid-area: nav-wrapper;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+}
+
+.navigation{
+  margin: 0px;
+  padding: 10px;
+}
+
+.navigation li{
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.left-column{
+  grid-area: left-column;
+
+}
+.right-column{
+  grid-area: right-column;
+
+}
+.dots-wrapper{
+  display: flex;
+  padding: 10px;
+}
+.dot{
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+.dot1{
+  background-color: #FC6058;
+}
+.dot2{
+  background-color: #FEC02F;
+}
+.dot3{
+  background-color: #2ACA3E;
+}
