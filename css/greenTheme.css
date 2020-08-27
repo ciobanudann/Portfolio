@@ -1,0 +1,16 @@
+/* Variables */
+:root{
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
+
+  --borderColor: #161914;
+
+  --mainColor: #606B56;
+  --secondaryColor: #515a48;
+
+  --themeDotBorder: #ffffff;
+
+  --colorBg: rgb(81, 90, 72, 0.8);
+  --previewShadow: #2a2f25;
+  --btnColor: #669966;
+}
